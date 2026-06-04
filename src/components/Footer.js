@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,19 +11,19 @@ function Footer() {
           <h3>📚 Student Management System</h3>
           <p>Limkokwing University's official student management platform</p>
           <div className="social-links">
-            <a href="#" className="social-link">📘 Facebook</a>
-            <a href="#" className="social-link">🐦 Twitter</a>
-            <a href="#" className="social-link">📧 Email</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">🐦 Twitter</a>
+            <a href="mailto:support@limkokwing.edu">📧 Email</a>
           </div>
         </div>
         
         <div className="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/welcome">Home</a></li>
-            <li><a href="/students">Student Records</a></li>
-            <li><a href="/add">Add Student</a></li>
-            <li><a href="/about">About Us</a></li>
+            <li><Link to="/welcome">Home</Link></li>
+            <li><Link to="/students">Student Records</Link></li>
+            <li><Link to="/add">Add Student</Link></li>
+            <li><Link to="/about">About Us</Link></li>
           </ul>
         </div>
         

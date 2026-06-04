@@ -165,6 +165,10 @@ function Login({ setLoggedInUser }) {
     }
   };
 
+  const handleForgotPassword = () => {
+    alert('📧 Password reset feature coming soon!\n\nPlease contact your system administrator for password assistance.');
+  };
+
   return (
     <div className="login-container">
       <div className="login-card">
@@ -236,7 +240,13 @@ function Login({ setLoggedInUser }) {
           </button>
           
           <div className="forgot-password">
-            <a href="#">Forgot Password?</a>
+            <button 
+              type="button"
+              onClick={handleForgotPassword}
+              className="forgot-password-btn"
+            >
+              Forgot Password?
+            </button>
           </div>
 
           <div className="login-info">
